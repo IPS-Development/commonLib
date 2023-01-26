@@ -24,4 +24,12 @@ class BaseService
         return $record ? json_decode($record->value, true) : [];
     }
 
+    /**
+     * @param $name
+     * @return void
+     */
+    public function setServiceTable($name) {
+        $this->service_table = $name;
+    }
+
 }
